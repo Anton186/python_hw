@@ -5,7 +5,6 @@
 
 import re
 import math
-import fractions
 
 fracs = list(map(int,
                  re.split(" |/", input('введите две дроби вида 2/3 через пробел: '))))

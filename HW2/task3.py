@@ -5,6 +5,7 @@
 
 import re
 import math
+import fractions
 
 fracs = list(map(int,
                  re.split(" |/", input('введите две дроби вида 2/3 через пробел: '))))
@@ -27,3 +28,8 @@ else:
 
 
 print(sum_fracs, prod_fracs)
+
+f1 = fractions.Fraction(fracs[0], fracs[1])
+f2 = fractions.Fraction(fracs[2], fracs[3])
+print('Решение через модуль fractions ', end='')
+print(f1 + f2, f1 * f2)
